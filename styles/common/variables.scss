@@ -1,0 +1,30 @@
+/*********************
+BREAKPOINTS
+*********************/
+
+ @mixin breakpoint($point) {
+   @if $point == desktop {
+     @media (max-width: 1365px) { @content ; }
+  }
+   @else if $point == laptop {
+     @media (max-width: 1024px) { @content ; }
+  }
+    @else if $point == tablet {
+     @media (max-width: 768px) { @content ; }
+  }
+    @else if $point == phablet {
+     @media (max-width: 640px)  { @content ; }
+  }
+   @else if $point == mobile {
+     @media (max-width: 375px)  { @content ; }
+  }
+}
+
+//Font-sizes
+$base-font-size: 16px;
+
+//Colors
+$street: #EDEEF0;
+$purple: #9933ff;
+$pink: lighten($purple, 15);
+$blue: #3399ff;

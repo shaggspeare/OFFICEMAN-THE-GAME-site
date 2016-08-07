@@ -1,0 +1,14 @@
+@import '../node_modules/node-normalize-scss/normalize';
+@import '../node_modules/susy/sass/susy';
+
+//partials
+@import './common/variables';
+@import './common/mixins';
+//@import './common/sprite';
+@import './common/common';
+@import './common/layout';
+@import './common/fonts';
+
+//blocks
+@import './blocks/header';
+@import './blocks/hero';
