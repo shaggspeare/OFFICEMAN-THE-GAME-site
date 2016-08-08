@@ -1,15 +1,17 @@
 .main{
+  background: linear-gradient($blue, $indigo, $orange);
+  background-repeat: no-repeat;
 
   &-section{
     @include flex-mixin(column, center, flex-start);
-    padding: 100px;
+    padding: 0 8vw;
     height: 320px;
     color: white;
 
     &:nth-child(even){
       @include flex-mixin(column, center, flex-end);
 
-      &__text{
+      .main-section__text{
         text-align: right;
       }
     }
@@ -17,6 +19,7 @@
       margin: 0;
       margin-bottom: 20px;
       font-size: 4vw;
+      letter-spacing: 0.2vw;
       text-shadow: 2px 2px 2px $pink,
       -2px -2px 2px $pink,
       2px -2px 2px $pink,
@@ -32,27 +35,9 @@
     }
   }
 }
-.what{
-  background: linear-gradient($blue, $indigo);
-  background-repeat: no-repeat;
-}
-.presentation{
-  background: $indigo;
-  background-repeat: no-repeat;
-}
-.story{
-  background: linear-gradient($indigo, $blue);
-  background-repeat: no-repeat;
-}
-.gameplay{
-  background: $blue;
-  background-repeat: no-repeat;
-}
-.objective{
-  background: linear-gradient($blue,$orange);
-  background-repeat: no-repeat;
-}
-.shop{
-  background: $orange;
-  background-repeat: no-repeat;
-}
+.what{}
+.presentation{}
+.story{}
+.gameplay{}
+.objective{}
+.shop{}

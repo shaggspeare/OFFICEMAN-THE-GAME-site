@@ -77,6 +77,6 @@ gulp.task('watch', function() {
   gulp.watch('index.html', ['html']);
 });
 
-gulp.task('default', ['html', 'scss','sprite', 'host', 'images', 'watch']);
+gulp.task('default', ['html', 'scss','sprite', 'host','fonts', 'images', 'watch']);
 
 

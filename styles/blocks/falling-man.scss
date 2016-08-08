@@ -2,8 +2,8 @@
   margin: 0 auto;
   position: fixed;
   top: 10vh;
-  left: 47%;
-  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
 
   &__img{
     display: block;

@@ -1,0 +1,41 @@
+.contacts{
+	@include flex-mixin(row, center, center);
+	height: 70vh;
+	border-top: 10px dashed $orange;
+
+}
+.contact-info{
+
+	&__heading{
+		margin: 0;
+		margin-bottom: 20px;
+		font-size: 3.5vw;
+		text-align: center;
+	}
+	&__text{
+		font-size: 2vw;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	
+}
+.media-links{
+	margin: 0;
+	@include flex-mixin(row, space-around, center);
+	flex-wrap: wrap;
+	&__link{
+		font-size: 5vh;
+		line-height: 1;
+		margin: 0 25px 20px 25px;
+		transition: color 0.2s ease-in-out;
+		
+		&:hover{
+			color: $indigo;
+		}
+	}
+	&__img{
+		transform: translateY(5px);
+		max-height: 5vh;
+		width: 5vh;
+	}
+}
