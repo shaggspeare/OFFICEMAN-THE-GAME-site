@@ -1,0 +1,58 @@
+.main{
+
+  &-section{
+    @include flex-mixin(column, center, flex-start);
+    padding: 100px;
+    height: 320px;
+    color: white;
+
+    &:nth-child(even){
+      @include flex-mixin(column, center, flex-end);
+
+      &__text{
+        text-align: right;
+      }
+    }
+    &__heading{
+      margin: 0;
+      margin-bottom: 20px;
+      font-size: 4vw;
+      text-shadow: 2px 2px 2px $pink,
+      -2px -2px 2px $pink,
+      2px -2px 2px $pink,
+      -2px 2px 2px $pink;
+    }
+    &__text{
+      font-size: 1.3vw;
+      letter-spacing: 0.2vw;
+      line-height: 1.6;
+      strong{
+        font-size: 1.5vw;
+      }
+    }
+  }
+}
+.what{
+  background: linear-gradient($blue, $indigo);
+  background-repeat: no-repeat;
+}
+.presentation{
+  background: $indigo;
+  background-repeat: no-repeat;
+}
+.story{
+  background: linear-gradient($indigo, $blue);
+  background-repeat: no-repeat;
+}
+.gameplay{
+  background: $blue;
+  background-repeat: no-repeat;
+}
+.objective{
+  background: linear-gradient($blue,$orange);
+  background-repeat: no-repeat;
+}
+.shop{
+  background: $orange;
+  background-repeat: no-repeat;
+}

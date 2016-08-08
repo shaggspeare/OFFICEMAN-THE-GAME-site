@@ -1,0 +1,47 @@
+.falling-man{
+  margin: 0 auto;
+  position: fixed;
+  top: 10vh;
+  left: 47%;
+  right: 0;
+
+  &__img{
+    display: block;
+    background-image: url("../../img/fall1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 34px;
+    width: 72px;
+    position: relative;
+    animation-name: man-shake;
+    animation-duration: 0.2s ;
+    animation-iteration-count: infinite;
+    &:before{
+      top:-34px;
+      left: 16px;
+      position: absolute;
+      content: "";
+      width: 1px;
+      height: 20px;
+      background: white;
+    }
+    &:after{
+      top:-28px;
+      left: 6px;
+      position: absolute;
+      content: "";
+      width: 1px;
+      height: 30px;
+      background: white;
+    }
+  }
+}
+@keyframes man-shake {
+  0%{
+    transform: translateY(2px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
