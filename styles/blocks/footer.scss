@@ -3,10 +3,18 @@
 	border-top: 10px dashed white;
 	background: $dark-gray;
 	padding: 0 50px;
-	@include flex-mixin(row, flex-start, center);
+	@include flex-mixin(row, space-between, center);
 
 	&__copyright{
-		color: white;
 		font-size: 1.5vw;
+	}
+	&__made-by{
+		font-size: 1.5vw;
+	}
+	&__author-link{
+		transition: color 0.3s ease-in-out; 
+		&:hover{
+			color: $purple;
+		}
 	}
 }

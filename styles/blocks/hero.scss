@@ -6,6 +6,38 @@
 	background: linear-gradient($purple, $blue);
     background-repeat: no-repeat;  
 }
+.logo{
+	position: absolute;
+	top: -37px;
+	left: 3vw;
+	height: 120px;
+	width: 100px;
+	border-bottom: 5px solid gray;
+	background-image: url("../img/stand1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom;
+    animation-name: man-shake;
+    animation-duration: 0.3s ;
+    animation-iteration-count: infinite;
+	
+}
+@keyframes man-shake {
+  0%{
+  }
+  25%{
+    background-image: url("../img/stand2.png");
+  }
+  50{
+    background-image: url("../img/stand3.png");
+  }
+  75{
+    background-image: url("../img/stand4.png");
+  }
+  100%{
+    background-image: url("../img/stand1.png");
+  }
+}
 .intro{
 	color: white;
 	text-align: center;
@@ -71,9 +103,10 @@
 		left: 25vw;
 	}
 	&:nth-child(6){
-		top: 20vh;
+		top: 70vh;
 		left: 90vw;
 	}
+
 	&__light{
 		position: relative;
 		&:before{

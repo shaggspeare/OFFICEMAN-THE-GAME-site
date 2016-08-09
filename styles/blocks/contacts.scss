@@ -2,14 +2,14 @@
 	@include flex-mixin(row, center, center);
 	height: 70vh;
 	border-top: 10px dashed $orange;
-
+	padding: 0 20px;
 }
 .contact-info{
 
 	&__heading{
 		margin: 0;
 		margin-bottom: 20px;
-		font-size: 3.5vw;
+		font-size: 4vw;
 		text-align: center;
 	}
 	&__text{

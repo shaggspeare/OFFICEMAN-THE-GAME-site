@@ -7,18 +7,18 @@
 
   &__img{
     display: block;
-    background-image: url("../../img/fall1.png");
+    background-image: url("../img/fall1.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 34px;
-    width: 72px;
+    height: 65px;
+    width: 140px;
     position: relative;
-    animation-name: man-shake;
+    animation-name: man-fall;
     animation-duration: 0.2s ;
     animation-iteration-count: infinite;
     &:before{
-      top:-34px;
+      top:-20px;
       left: 16px;
       position: absolute;
       content: "";
@@ -27,7 +27,7 @@
       background: white;
     }
     &:after{
-      top:-28px;
+      top:-14px;
       left: 6px;
       position: absolute;
       content: "";
@@ -37,11 +37,21 @@
     }
   }
 }
-@keyframes man-shake {
+@keyframes man-fall {
   0%{
-    transform: translateY(2px);
+    //transform: translateY(1px);
+  }
+  25%{
+    background-image: url("../img/fall2.png");
+  }
+  50{
+    background-image: url("../img/fall3.png");
+  }
+  75{
+    background-image: url("../img/fall4.png");
   }
   100%{
-    transform: translateY(0);
+    //transform: translateY(0);
+    background-image: url("../img/fall1.png");
   }
 }
